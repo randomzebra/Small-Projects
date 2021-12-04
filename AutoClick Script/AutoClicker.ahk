@@ -10,7 +10,9 @@ y :=
 WinGetPos,,, x, y, ahk_exe %Path%,,,
 x := (x/2)
 y := (y/2)
+z := WinExist(ahk_exe game.exe)
 Gui, 1:Add, Text,, On %x% %y%
+Gui, 1:Add, Text,,%z%
 Gui, 2:Add, Text,, Off
 Return
 
